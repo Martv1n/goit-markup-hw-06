@@ -52,16 +52,97 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-closed"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">   
+           <ul class="mobile-menu-inner">
+            <li><a href="#" class="navigation">Studio</a></li>
+            <li><a href="#" class="navigation">Portfolio</a></li>
+            <li><a href="#" class="navigation">Contacts</a></li>
+           </ul>
+          </nav>
+          <address class="mobile-menu-adress">
+            <ul class="mobile-menu-address-lists">
+              <li>
+                <a class="contacts" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="contacts" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-menu-social-lists">
+            <li class="mobile-menu-social-link-icon">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="mobile-menu-social-link"
+              >
+                <svg width="24" height="24" class="link-icon">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-link-icon">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="mobile-menu-social-link"
+              >
+                <svg width="24" height="24" class="link-icon">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-link-icon">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="mobile-menu-social-link"
+              >
+                <svg width="24" height="24" class="link-icon">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-link-icon">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="mobile-menu-social-link"
+              >
+                <svg width="24" height="24" class="link-icon">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <section class="main-page">
+      <section class="main-page hidden">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="head-btn" type="button">Order Service</button>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits hidden">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
 
@@ -117,7 +198,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-team">
+      <section class="our-team hidden">
         <div class="container">
           <h2 class="our-team-head">Our Team</h2>
           <ul class="our-team-cards">
@@ -356,7 +437,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-portfolio">
+      <section class="our-portfolio hidden">
         <div class="container">
           <h2 class="our-portfolio-head">Our Portfolio</h2>
           <ul class="our-portfolio-cards">
@@ -478,7 +559,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-page">
+    <footer class="footer-page hidden">
       <div class="container footer-inner">
         <div class="footer-logo">
           <a class="logo-footer-f" href="./index.html"
@@ -561,7 +642,7 @@
         </div>
       </div>
     </footer>
-    <div class="overlay__fidback">
+    <div class="overlay__fidback hidden">
       <div class="fidback">
         <button type="button" class="fidback__button_closed">
           <svg class="button_closed__icon" width="8" height="8">
