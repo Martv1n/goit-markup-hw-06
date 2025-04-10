@@ -52,35 +52,35 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn">
+        <button class="burger-btn" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close-btn">
+          <button class="mobile-menu-close-btn" data-menu-close>
             <svg class="mobile-menu-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-closed"></use>
             </svg>
           </button>
-          <nav class="mobile-menu-nav">   
-           <ul class="mobile-menu-inner">
-            <li><a href="#" class="navigation">Studio</a></li>
-            <li><a href="#" class="navigation">Portfolio</a></li>
-            <li><a href="#" class="navigation">Contacts</a></li>
-           </ul>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-inner">
+              <li><a href="#" class="mobile-navigation">Studio</a></li>
+              <li><a href="#" class="mobile-navigation">Portfolio</a></li>
+              <li><a href="#" class="mobile-navigation">Contacts</a></li>
+            </ul>
           </nav>
           <address class="mobile-menu-adress">
             <ul class="mobile-menu-address-lists">
               <li>
-                <a class="contacts" href="mailto:info@devstudio.com"
+                <a class="mobile-contacts" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="contacts" href="tel:+110001111111"
+                <a class="mobile-contacts" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
@@ -136,13 +136,13 @@
       </div>
     </header>
     <main>
-      <section class="main-page hidden">
+      <section class="main-page">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="head-btn" type="button">Order Service</button>
+          <button class="head-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
-      <section class="benefits hidden">
+      <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
 
@@ -198,7 +198,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-team hidden">
+      <section class="our-team">
         <div class="container">
           <h2 class="our-team-head">Our Team</h2>
           <ul class="our-team-cards">
@@ -437,7 +437,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-portfolio hidden">
+      <section class="our-portfolio">
         <div class="container">
           <h2 class="our-portfolio-head">Our Portfolio</h2>
           <ul class="our-portfolio-cards">
@@ -559,7 +559,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-page hidden">
+    <footer class="footer-page">
       <div class="container footer-inner">
         <div class="footer-logo">
           <a class="logo-footer-f" href="./index.html"
@@ -642,9 +642,9 @@
         </div>
       </div>
     </footer>
-    <div class="overlay__fidback hidden">
+    <div class="overlay__fidback" data-modal>
       <div class="fidback">
-        <button type="button" class="fidback__button_closed">
+        <button type="button" class="fidback__button_closed" data-modal-close>
           <svg class="button_closed__icon" width="8" height="8">
             <use href="./images/icons.svg#icon-closed"></use>
           </svg>
@@ -718,14 +718,18 @@
                 ><svg width="10" height="8" class="checkbox-icon">
                   <use href="./images/icons.svg#icon-check"></use></svg
               ></span>
-              I accept the terms and conditions of the
-
-              <a href="#" class="checkbox__link">Privacy Policy</a></label
-            >
+              <div class="privacy">
+                <p>I accept the terms and conditions of the</p>
+                &nbsp;
+                <a href="#" class="checkbox__link">Privacy Policy</a>
+              </div>
+            </label>
           </div>
           <button type="submit" class="fidback__btn">Send</button>
         </form>
       </div>
     </div>
+    <script src="./modal.js"></script>
+    <script src="./menu.js"></script>
   </body>
 </html>
