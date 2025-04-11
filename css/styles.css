@@ -1217,6 +1217,7 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     fill: transparent;
     margin-right: 8px;
     width: 16px;
@@ -1275,9 +1276,12 @@ img {
         padding: 72px 24px 24px 24px;
     }
 
+    .checkbox__text {
+        align-items: baseline;
+    }
+
     .privacy {
         display: flex;
-        align-items: center;
     }
 
     .privacy p {
